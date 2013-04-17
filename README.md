@@ -14,7 +14,7 @@ cd standalone-amd-cs
 volo add iota-observable
 volo add cs
 # Modify `www/js/app.js`: "cs!app/main"
-mv `www/js/app/main.js` to `www/js/app/main.coffee`
+mv www/js/app/main.js www/js/app/main.coffee
 # Modify `main.coffee`
 ```
 
