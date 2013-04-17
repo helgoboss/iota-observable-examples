@@ -1,0 +1,11 @@
+{
+  "amd": {},
+  "volo": {
+    "baseUrl": "www/js/lib",
+    "dependencies": {
+      "coffee-script": "github:jashkenas/coffee-script/1.6.2",
+      "cs": "github:jrburke/require-cs/0.4.3",
+      "iota-observable": "github:helgoboss/iota-observable/master"
+    }
+  }
+}

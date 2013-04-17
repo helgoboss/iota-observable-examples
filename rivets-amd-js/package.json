@@ -1,0 +1,12 @@
+{
+  "amd": {},
+  "volo": {
+    "baseUrl": "www/js/lib",
+    "dependencies": {
+      "jquery": "github:jquery/jquery/1.9.1",
+      "rivets": "github:mikeric/rivets/v0.4.8",
+      "rivets-iota-observable-adapter": "github:helgoboss/rivets-iota-observable-adapter/master",
+      "iota-observable": "github:helgoboss/iota-observable/master"
+    }
+  }
+}
