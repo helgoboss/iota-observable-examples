@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery.js"></script>
+        <script src="js/rivets.js"></script>
+        <script src="js/iota-observable.js"></script>
+        <script src="js/rivets-iota-observable-adapter.js"></script>
+        <script>
+            $(document).ready(function() {
+              // Create counter object and make it Observable
+              var model = {
+                counter: {
+                  value: 0
+                }
+              };
+              Observable.makeObservable(model.counter);
+
+              // Bind counter value to a DOM element
+              var template = '<div data-text="counter.value" />';
+              var domElement = $(template)[0];
+              rivets.bind(domElement, model);
+
+              // Append DOM element to main tree
+              $(domElement).appendTo('body');
+              
+              // Increment counter asynchronously 1000 times
+              function incrementCounter() {
+                model.counter.set('value', model.counter.value + 1);
+                if (model.counter.value < 1000) {
+                  setTimeout(incrementCounter, 0);
+                }
+              }
+              incrementCounter();
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+    </body>
+</html>
