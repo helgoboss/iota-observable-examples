@@ -23,7 +23,7 @@ mv www/js/app/main.js www/js/app/main.coffee
 This example shows the combination with [Rivets](http://rivetsjs.com/) employing [RequireJS](http://requirejs.org/) as AMD module loader
 
 The project was created using [Volo](http://volojs.org/):
-```
+```bash
 volo create rivets-amd
 cd rivets-amd
 volo add jquery
